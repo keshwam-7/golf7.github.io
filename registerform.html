@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register Now</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="register/css/bootstrap.min.css" />
+
+    <!-- Bootstrap JavaScript dependencies -->
+    <script src="register/js/popper.js"></script>
+    <script src="register/js/jquery.js"></script>
+    <script src="register/js/bootstrap.bundle.min.js"></script>
+    <script src="register/js/sweetalert.min.js"></script>
+
+    <!-- Custom JavaScript for registration form -->
+    <script src="register/register.js"></script>
+
+    <!-- Custom CSS for registration form -->
+    <link rel="stylesheet" href="register/register.css" />
+</head>
+<body class="bg-light d-flex justify-content-center align-items-center">
+
+    <!-- Registration Form Container -->
+    <div class="card" style=" width:50%;">
+
+        <!-- Card Header -->
+        <div class="card-header" style="background-color:rgb(152, 162, 172);">
+
+             <!-- Logo -->
+             <img src="assets/logologin.png" alt="Logo" style=" max-width: 50px; margin-right: 10px;">
+            Registration Form
+        </div>
+
+        <!-- Registration Form -->
+        <form>
+          
+            <!-- First Row: First Name and Last Name -->
+            <div class="row">
+                <div class="col">
+                    <b>First Name</b>
+                    <input type="text" class="form-control" placeholder="First name" name="firstName" id="firstName">
+                    <div class="errormessage" id="fnamemsg"></div>
+                </div>
+                <div class="col">
+                    <b>Last Name</b>
+                    <input type="text" class="form-control" placeholder="Last name" name="lastName" id="lastName">
+                    <div class="errormessage" id="lnamemsg"> </div>
+                </div>
+            </div>
+
+            <!-- Second Row: Street Address and City -->
+            <div class="row">
+                <div class="col">
+                    <b>Street Address </b>
+                    <input type="text" class="form-control" placeholder="Street Address" name="streetAddress" id="streetAddress">
+                    <div class="errormessage" id="staddressmsg"> </div>
+                </div>
+                <div class="col">
+                    <b> City </b>
+                    <input type="text" class="form-control" placeholder="City" name="city" id="city">
+                    <div class="errormessage" id="citymsg"> </div>
+                </div>
+            </div>
+
+            <!-- Third Row: Province and Country -->
+            <div class="row">
+                <div class="col">
+                    <b>Province</b>
+                    <input type="text" class="form-control" placeholder="Province" name="province" id="province">
+                    <div class="errormessage" id="provincemsg"> </div>
+                </div>
+                <div class="col">
+                    <b>Country</b>
+                    <select class="form-control" name="country" id="country">
+                        <option selected>Choose Country</option>
+                        <option value="Canada">Canada</option>
+                        <option value="USA">USA</option>
+                    </select>
+                    <div class="errormessage" id="countrymsg"> </div>
+                </div>
+            </div>
+
+            <!-- Fourth Row: Postal Code and Email -->
+            <div class="row">
+                <div class="col">
+                    <b>Postal Code</b>
+                    <input type="text" class="form-control" placeholder="T3J 5L9" name="postalCode" id="postalCode">
+                    <div class="errormessage" id="postalcodemsg"> </div>
+                </div>
+                <div class="col">
+                    <b>Email</b>
+                    <input type="email" class="form-control" placeholder="abc123xyz@xyz.com" name="cEmail" id="cEmail">
+                    <div class="errormessage" id="cemailmsg"> </div>
+                </div>
+            </div>
+
+            <!-- Fifth Row: Home Phone and Business Phone -->
+            <div class="row">
+                <div class="col">
+                    <b>Home Phone</b>
+                    <input type="text" class="form-control" placeholder="000-000 0000" name="homePhone" id="homePhone">
+                    <div class="errormessage" id="homephonemsg"> </div>
+                </div>
+                <div class="col">
+                    <b> Business Phone(Optional)</b>
+                    <input type="text" class="form-control" placeholder="000-000 0000" name="businessPhone" id="businessPhone">
+                </div>
+            </div>
+
+            <!-- Sixth Row: User ID -->
+            <div class="row">
+                <div class="col">
+                    <b>Enter the User Id you will use in the future </b>
+                    <input type="text" class="form-control" placeholder="Enter the user Id you will use in the future" name="userId" id="userId">
+                    <div class="errormessage" id="useridmsg"> </div>
+                </div>
+            </div>
+
+            <!-- Seventh Row: Password and Confirm Password -->
+            <div class="row">
+                <div class="col">
+                    <b>Choose your Password</b>
+                    <input type="password" class="form-control" placeholder="Enter Password" name="pass" id="pass">
+                    <div class="errormessage" id="passmsg"> </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <b>Confirm Password</b>
+                    <input type="Password" class="form-control" placeholder="Confirm Password" name="confirmPass" id="confirmPass">
+                    <div class="errormessage" id="confirmpassmsg"> </div>
+                </div>
+            </div>
+
+            <!-- Buttons Row: Submit and Reset -->
+            <div class="row">
+                <div class="col">
+                    <button type="submit" id="sbutton" class="btn btn-primary" style="width:100%;"> Register Now </button>
+                </div>
+                <div class="col">
+                    <button type="reset" class="btn btn-primary" style="width:100%;" > Clear the Form</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
